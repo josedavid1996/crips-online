@@ -1,3 +1,24 @@
 <div class="homepage w-full min-h-screen flex justify-center items-center">
-  <p>Hola</p>
+  {% assign old_img_url = section.settings.imagen | img_url: product_image_size %}
+  <img
+    src="{% render 'imagekit' src:old_img_url %}"
+    alt="{{ featured_img_alt }}"
+    id="FeaturedImage-{{ section.id }}"
+    class="product-featured-img{% if enable_zoom %} js-zoom-enabled{% endif %} w-20 h-20"
+  >
+  <p>{% render 'imagekit', src: old_img_url %}</p>
 </div>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "imagen",
+      "label": "Título2",
+      "info": "Este es el título que se mostrará en el menú móvil."
+    }
+  ]
+}
+{% endschema %}
