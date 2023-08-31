@@ -1,0 +1,23 @@
+{
+  "name": "crips-online",
+  "version": "1.0.0",
+  "description": "[![Generic badge](https://img.shields.io/badge/course%20available%3F-yes-green.svg)](https://shields.io/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josedavid1996/crips-online.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josedavid1996/crips-online/issues"
+  },
+  "homepage": "https://github.com/josedavid1996/crips-online#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
