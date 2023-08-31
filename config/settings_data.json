@@ -1,6 +1,6 @@
 {
   "current": {
-    "enableImageKit": true,
+    "enableImageKit": false,
     "imagekitUrl": "https:\/\/ik.imagekit.io\/dbwnrjies\/",
     "sections": {
       "homepage": {
