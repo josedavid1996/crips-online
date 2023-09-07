@@ -1,13 +1,5 @@
-<div class="homepage w-full min-h-screen flex justify-center items-center flex-col">
-  {% assign old_img_url = section.settings.imagen | img_url: product_image_size %}
-  <img
-    src="{% render 'imagekit' src:old_img_url %}"
-    alt="{{ featured_img_alt }}"
-    id="FeaturedImage-{{ section.id }}"
-    class="product-featured-img{% if enable_zoom %} js-zoom-enabled{% endif %} w-20 h-20"
-  >
-  <p>{% render 'imagekit', src: old_img_url %}</p>
-  <p>{{ section.settings.imagen | img_url: product_image_size }}</p>
+<div class="container">
+  <button class="btn">Prueba con Google optimaze</button>
 </div>
 
 {% schema %}
