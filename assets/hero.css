@@ -1,3 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.version-b,
+.version-c {
+  display: none !important;
+}
+.container[variante='b'] .version-b {
+  display: flex !important;
+}
+.container[variante='b'] .version-a {
+  display: none !important;
+}
+.container[variante='c'] .version-c {
+  display: flex !important;
+}
+.container[variante='c'] .version-a {
+  display: none !important;
+}
+
 .container {
   width: 100%;
   height: 100vh;
@@ -5,24 +27,32 @@
   justify-content: center;
   align-items: center;
 }
+.container-card {
+  height: 200px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 0 20px;
+}
+.container-card::-webkit-scrollbar {
+  display: none; /* Ocultar scroll */
+}
 
-.btn {
-  padding: 12px 16px;
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  cursor: pointer;
-  color: white;
+.card {
+  height: 150px;
+  min-width: 150px;
+  border-radius: 50%;
   background-color: gray;
 }
 
-.btn-primary {
+.bg-red {
   background-color: red;
 }
-.btn-secondary {
+.bg-blue {
   background-color: blue;
 }
-.btn-third {
+.bg-green {
   background-color: green;
 }
