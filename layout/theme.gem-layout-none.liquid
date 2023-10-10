@@ -1,0 +1,61 @@
+{% comment %}
+	GEMPAGE BUILDER (https://apps.shopify.com/gempage)
+
+	You SHOULD NOT modify source code in this page because
+	It is automatically generated from GEMPAGE BUILDER
+	Try to edit page with the live editor.
+{% endcomment %}
+<!doctype html>
+<html>
+  <head>
+    <title>{{ page_title }}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="{{ page_description | escape }}">
+    <link rel="canonical" href="{{ canonical_url }}">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    {{ content_for_header }}
+    <!-- Header hook for plugins -->
+    {{ 'application.css' | asset_url | stylesheet_tag }}
+    {{ 'hero.css' | asset_url | stylesheet_tag }}
+    <style>
+      .async-hide {
+        opacity: 0 !important;
+      }
+    </style>
+    <script>
+      (function (a, s, y, n, c, h, i, d, e) {
+        s.className += ' ' + y;
+        h.start = 1 * new Date();
+        h.end = i = function () {
+          s.className = s.className.replace(RegExp(' ?' + y), '');
+        };
+        (a[n] = a[n] || []).hide = h;
+        setTimeout(function () {
+          i();
+          h.end = null;
+        }, c);
+        h.timeout = c;
+      })(window, document.documentElement, 'async-hide', 'dataLayer', 4000, { 'OPT-N4SXJ54': true });
+    </script>
+    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-N4SXJ54"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QV8H16LGBD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-QV8H16LGBD');
+    </script>
+  </head>
+  <body>
+<div class="gem-container">
+	{{ content_for_layout }}
+</div><!-- end .gem-container -->
+<!--Gem_Page_Footer_Script-->
+{% render 'gem-app-footer-scripts', GEM_FOOTER_SCRIPT: GEM_FOOTER_SCRIPT %}
+<!--End_Gem_Page_Footer_Script-->
+</body>
+</html>
