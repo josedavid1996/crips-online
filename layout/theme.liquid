@@ -42,11 +42,17 @@
 
       gtag('config', 'G-QV8H16LGBD');
     </script>
-  </head>
+  <!--Gem_Page_Header_Script-->
+{% render 'gem-app-header-scripts' %}
+<!--End_Gem_Page_Header_Script-->
+</head>
   <body>
     <main role="main">
       {{ content_for_layout }}
     </main>
     {{ 'application.js' | asset_url | script_tag }}
-  </body>
+  <!--Gem_Page_Footer_Script-->
+{% render 'gem-app-footer-scripts', GEM_FOOTER_SCRIPT: GEM_FOOTER_SCRIPT %}
+<!--End_Gem_Page_Footer_Script-->
+</body>
 </html>
